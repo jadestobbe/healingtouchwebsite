@@ -1,0 +1,132 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+	margin: 0px;
+	padding: 0px;
+	background-color: rgb(31, 15, 2);
+	font-family: "Bad Script";
+	color: #ccc;
+}
+
+.PageWrapper{
+	position: relative;
+
+}
+header {
+	padding: 5px;
+	border-bottom: 3px solid rgb(60,29,4);
+	text-align: center;
+}
+h1 {
+	font-family: 'Alex Brush';
+	font-size: 60px;
+	margin: 0px;
+	padding: 10px;
+}
+h2 {
+	font-family: 'Alex Brush';
+	margin: 0px;
+	font-size: 55px;
+	padding: 10px;
+}
+h3 {
+	font-family: 'Alex Brush';
+	margin: 0px;
+	font-size: 45px;
+	padding: 10px;
+	text-decoration: underline;
+}
+p {
+	padding: 20px;
+	font-size: 20px;
+}
+nav {
+
+	box-sizing: border-box;
+	float: left;
+	width: 200px;
+	background:rgb(127,0,0);
+
+
+}
+ul {
+	margin:0px;
+	padding:0px;
+}
+ul li {
+	list-style: none;
+
+
+}
+ul li a {
+	background: rgb(60,29,4);
+	border-bottom: 2px solid rgb(31, 15, 2);
+	display: block;
+	width: 200px;
+	padding: 5px;
+	text-decoration: none;
+	box-sizing: border-box;
+	color: #ccc;
+}
+nav ul li :hover{
+	background: #4097AD;
+	transition: linear all 0.40s;
+}
+.ContentWrapper {
+	margin-bottom: 100px;
+	margin-left: 210px;
+	padding: 50px;
+	text-align: center;
+}
+img {
+	opacity: 0.6;
+	width: 75%;
+}
+.imgfloatright{
+	overflow: hidden;
+	margin-bottom: 10px;
+}
+.imgfloatleft img{
+	float: left;
+	width: 200px;
+}
+.imgfloatright img{
+	float: right;
+	width: 200px;
+	margin-left: 10px;
+	margin-top: auto;
+}
+span{
+	text-decoration: underline;
+}
+
+#facebook img {
+	position: absolute;
+	top: 20px;
+	right: 10px;
+
+	width: 50px;
+}
+
+iframe {
+	float: right;
+	margin: 50px;
+}
+.address {
+	overflow: hidden;
+	border-bottom: solid 1px #ccc;
+}
+.address address {
+	margin: 50px;
+}
+.footer {
+        font-family: "Times New Roman", Times, serif;
+        padding-top-bottom: 50px;
+}
+.footer p{
+        text-align: center;
+}
+.animated-gif{
+  max-width: 400px;
+  height: auto;
+
+}
