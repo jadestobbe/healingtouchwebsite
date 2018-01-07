@@ -131,39 +131,39 @@ iframe {
 
 } */
 body{
+	background-color: rgb(31, 15, 2);
 	font-family: "Bad Script";
+	color: #ccc;
+}
+body * {
+	box-sizing: border-box;
 }
 div.pagewrapper{
     display: grid;
     grid-gap: 1vh;
 }
 header, footer {
-    background-color: #333;
+		padding: 5px;
+		border-bottom: 3px solid rgb(60,29,4);
+		text-align: center;
 }
 header {
     height:10vh;
     grid-area: h;
-    /* grid-row: 1;
-    grid-column: 1; */
 }
 nav {
 	width: 15vw;
     height:88vh;
     grid-area: n;
-    /* grid-row: 2/5;
-    grid-column: 1/4; */
     background:rgb(127,0,0);
     display: grid;
 }
 a {
 	background: rgb(60,29,4);
 	border-bottom: 2px solid rgb(31, 15, 2);
-
-
 	text-decoration: none;
 	box-sizing: border-box;
 	color: #ccc;
-
     margin: 5px;
 }
 a:hover{
@@ -189,4 +189,5 @@ div.pagewrapper{
     'n n m m'
     'n n m m'
     'f f f f';
+	grid-gap: 1px;
 }
