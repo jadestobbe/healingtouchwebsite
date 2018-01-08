@@ -214,21 +214,25 @@ div.pagewrapper {
 }
 
 img {
-  max-width: 90vw;
+  max-width: 90%;
 }
-
-@media only screen and (min-width: 800px) {}
 
 @media only screen and (max-width: 800px) {
   div.pagewrapper {
     grid: 'h' 'n' 'm' 'f';
   }
   nav {
-    display: none;
+  	
+    display: grid;
     margin: auto;
     width: 90vw;
+    
   }
   #menubtn {
     display: initial;
   }
+}
+
+@media only screen and (min-width: 800px) {
+	
 }
