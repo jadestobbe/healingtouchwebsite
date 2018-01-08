@@ -156,11 +156,20 @@ header {
   grid-area: h;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 header h1 {
-  margin: 0;
+  margin: auto;
+}
+
+#menubtn {
+  height: 80%;
+  display: none;
+}
+
+#facebookbtn {
+  height: 80%;
 }
 
 nav {
@@ -216,5 +225,8 @@ img {
     /* display: none; */
     margin: auto;
     width: 90vw;
+  }
+  #menubtn {
+    display: initial;
   }
 }
