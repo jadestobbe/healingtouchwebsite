@@ -217,12 +217,14 @@ img {
   max-width: 90vw;
 }
 
+@media only screen and (min-width: 800px) {}
+
 @media only screen and (max-width: 800px) {
   div.pagewrapper {
     grid: 'h' 'n' 'm' 'f';
   }
   nav {
-    /* display: none; */
+    display: none;
     margin: auto;
     width: 90vw;
   }
