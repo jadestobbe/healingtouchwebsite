@@ -1,4 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
+
 /* body {
 	margin: 0px;
 	padding: 0px;
@@ -130,69 +131,90 @@ iframe {
   height: auto;
 
 } */
-body{
-	background-color: rgb(31, 15, 2);
-	font-family: "Bad Script";
-	color: #ccc;
-	margin: 0;
+
+body {
+  background-color: rgb(31, 15, 2);
+  font-family: "Bad Script";
+  color: #ccc;
+  margin: 0;
 }
-h1, h2, h3{
-	font-family: "Alex Brush";
+
+h1, h2, h3 {
+  font-family: "Alex Brush";
 }
-div.pagewrapper{
-    display: grid;
-    grid-gap: 1vh;
+
+div.pagewrapper {
+  display: grid;
+  grid-gap: 1vh;
 }
+
 header {
-	box-sizing: border-box;
-	padding: 3px;
-	border-bottom: 3px solid rgb(60,29,4);
-    height:10vh;
-    grid-area: h;
-	display : flex;
-  align-items : center;
-  justify-content: center
+  box-sizing: border-box;
+  padding: 3px;
+  border-bottom: 3px solid rgb(60, 29, 4);
+  height: 10vh;
+  grid-area: h;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
+header h1 {
+  margin: 0;
 }
-header h1{
-	margin: 0;
-}
+
 nav {
-
-	margin-top: 2px;
-	width: 15vw;
-    height:88vh;
-    grid-area: n;
-    display: grid;
-	/* display:none; */
+  margin-top: 2px;
+  width: 15vw;
+  height: 88vh;
+  grid-area: n;
+  display: grid;
 }
+
 a {
-	background: rgb(60,29,4);
-	border-bottom: 2px solid rgb(31, 15, 2);
-	text-decoration: none;
-	box-sizing: border-box;
-	color: #ccc;
+  background: rgb(60, 29, 4);
+  border-bottom: 2px solid rgb(31, 15, 2);
+  text-decoration: none;
+  box-sizing: border-box;
+  color: #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
 
+a:hover {
+  background: #4097AD;
+  transition: linear all 0.40s;
 }
-a:hover{
-	background: #4097AD;
-	transition: linear all 0.40s;
+
+div.pagecontent {
+  box-sizing: border-box;
+  grid-area: m;
+  padding: 20px;
 }
-div.maincontent {
-    grid-area: m;
-    padding: 5px;
+
+footer {
+  grid-area: f;
+  background-color: rgb(70, 29, 4);
 }
-footer{
-    grid-area: f;
-	background-color: rgb(70,29,4);
+
+div.pagewrapper {
+  grid: 'h h' 'n m' 'n m' 'n m' 'n m' 'f f';
+  grid-gap: 1px;
+  /* padding: 10px; */
 }
-div.pagewrapper{
-    grid:
-    'h h h h'
-    'n n m m'
-    'n n m m'
-    'n n m m'
-    'n n m m'
-    'f f f f';
-	grid-gap: 1px;
+
+img {
+  max-width: 90vw;
+}
+
+@media only screen and (max-width: 800px) {
+  div.pagewrapper {
+    grid: 'h' 'n' 'm' 'f';
+  }
+  nav {
+    /* display: none; */
+    margin: auto;
+    width: 90vw;
+  }
 }
