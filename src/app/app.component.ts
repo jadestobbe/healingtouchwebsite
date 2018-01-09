@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+//Declare jquery. Script is called in index.html
 declare var $: any;
 
 @Component({
@@ -11,33 +12,31 @@ export class AppComponent {
   toggleNav(): void {
     $('nav').slideToggle();
   }
-  
+
   ngOnInit() {
-    if($('#menubtn').is(':visible')){
-      $('nav').css('display','none');
+    if ($('#menubtn').is(':visible')) {
+      $('nav').css('display', 'none');
     }
-    $('#menubtn').on('click', ()=>{
-      if($('nav').css('display') == 'none'){
-       $('nav').css('display','grid');
+    $('#menubtn').on('click', () => {
+      if ($('nav').css('display') == 'none') {
+        $('nav').css('display', 'grid');
       }
-      else{
-        $('nav').css('display','none');
+      else {
+        $('nav').css('display', 'none');
       }
     });
-   $( window ).resize(function() {
-     if($('#menubtn').is(':visible')){
-       $('nav').css('display','none');
-     }
-     else{
-       $('nav').css('display','grid');
-     }
-   });
+    $('nav').on('a click', () => {
+      if ($('#menubtn').is(':visible')) {
+        $('nav').css('display', 'none');
+      }
+    });
+    $(window).resize(function() {
+      if ($('#menubtn').is(':visible')) {
+        $('nav').css('display', 'none');
+      }
+      else {
+        $('nav').css('display', 'grid');
+      }
+    });
   }
 }
-
-// if($('#menubtn').is(':visible')){
-//       alert('visible');
-//     }
-//     else if($('#menubtn').is(':hidden')){
-//       alert('hidden');
-//     }

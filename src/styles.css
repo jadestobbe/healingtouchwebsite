@@ -168,8 +168,12 @@ header h1 {
   display: none;
 }
 
+#facebookwrapper {
+  height: 100%;
+}
+
 #facebookbtn {
-  height: 80%;
+  height: 100%;
 }
 
 nav {
@@ -180,7 +184,7 @@ nav {
   display: grid;
 }
 
-a {
+nav a {
   background: rgb(60, 29, 4);
   border-bottom: 2px solid rgb(31, 15, 2);
   text-decoration: none;
