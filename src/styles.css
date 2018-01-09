@@ -212,13 +212,17 @@ footer {
 }
 
 div.pagewrapper {
-  grid: 'h h' 'n m' 'n m' 'n m' 'n m' 'f f';
+  grid: 'h h h h' 'n m m m' 'f f f f';
   grid-gap: 1px;
   /* padding: 10px; */
 }
 
 img {
   max-width: 85%;
+}
+
+ul {
+  list-style: none;
 }
 
 @media only screen and (max-width: 800px) {
