@@ -18,7 +18,7 @@ export class AppComponent {
       $('nav').css('display', 'none');
     }
     $('#menubtn').on('click', () => {
-      $("#menubtn").scrollTop(0);
+      window.scrollTo(0, 1);
       if ($('nav').css('display') == 'none') {
         $('nav').css('display', 'grid');
       }
