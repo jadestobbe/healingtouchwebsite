@@ -4,6 +4,10 @@ div.address {
   grid-template-areas: 'a a';
 }
 
+div.first {
+  padding-bottom: 8px;
+  border-bottom: solid rgb(60, 29, 4);
+}
 iframe {
   margin-left: auto;
   margin-right: auto;

@@ -239,6 +239,7 @@ ul {
     display: grid;
     margin: auto;
     width: 90vw;
+    overflow: auto;
   }
   #menubtn {
     display: initial;
