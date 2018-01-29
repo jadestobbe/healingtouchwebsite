@@ -9,34 +9,36 @@ declare var $: any;
 })
 export class AppComponent {
   title = 'The Healing Touch';
-  toggleNav(): void {
-    $('nav').slideToggle();
-  }
 
   ngOnInit() {
-    if ($('#menubtn').is(':visible')) {
-      $('nav').css('display', 'none');
+
+    let menubtn = $('#menubtn');
+    let nav = $('nav');
+    let windowWidth = $(window).width();
+    if (menubtn.is(':visible')) {
+      nav.css('display', 'none');
     }
-    $('#menubtn').on('click', () => {
+    menubtn.on('click', () => {
       window.scrollTo(0, 1);
-      if ($('nav').css('display') == 'none') {
-        $('nav').css('display', 'grid');
+      if (nav.css('display') == 'none') {
+        nav.css('display', 'grid');
       }
       else {
-        $('nav').css('display', 'none');
+        nav.css('display', 'none');
       }
     });
-    $('nav').on('a click', () => {
-      if ($('#menubtn').is(':visible')) {
-        $('nav').css('display', 'none');
+    nav.on('a click', () => {
+      if (menubtn.is(':visible')) {
+        nav.css('display', 'none');
       }
     });
     $(window).resize(function() {
-      if ($('#menubtn').is(':visible')) {
-        $('nav').css('display', 'none');
+      if (menubtn.is(':visible') && $(window).width() != windowWidth) {
+        windowWidth = $(window).width();
+        nav.css('display', 'none');
       }
       else {
-        $('nav').css('display', 'grid');
+        nav.css('display', 'grid');
       }
     });
   }
