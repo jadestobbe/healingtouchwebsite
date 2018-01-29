@@ -33,9 +33,12 @@ export class AppComponent {
       }
     });
     $(window).resize(function() {
-      if (menubtn.is(':visible') && $(window).width() != windowWidth) {
-        windowWidth = $(window).width();
-        nav.css('display', 'none');
+      if (menubtn.is(':visible')) {
+        if ($(window).width() != windowWidth) {
+          windowWidth = $(window).width();
+          nav.css('display', 'none');
+        }
+        //else do nothing
       }
       else {
         nav.css('display', 'grid');
