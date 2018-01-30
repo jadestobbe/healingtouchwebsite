@@ -134,9 +134,15 @@ iframe {
 
 body {
   background-color: rgb(31, 15, 2);
+  background-image: url("/assets/images/pexels-photo-326333-6opacity.png");
   font-family: "Bad Script";
   color: #ccc;
   margin: 0;
+  opacity: 0.95;
+}
+
+img {
+  opacity: 0.9;
 }
 
 h1, h2, h3 {
