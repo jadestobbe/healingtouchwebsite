@@ -153,19 +153,21 @@ div.pagewrapper {
   display: grid;
   grid-gap: 1vh;
 }
-
-header {
+app-header {
+  grid-area: h;
+}
+app-header header{
   box-sizing: border-box;
   padding: 3px;
   border-bottom: 3px solid rgb(60, 29, 4);
   height: 10vh;
-  grid-area: h;
+  
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-header h1 {
+app-header header h1 {
   margin: auto;
 }
 
@@ -181,13 +183,14 @@ header h1 {
 #facebookbtn {
   height: 100%;
 }
-
+app-nav-bar{
+  grid-area: n;
+}
 nav {
   opacity: 0.7;
   margin-top: 2px;
   width: 15vw;
   height: 88vh;
-  grid-area: n;
   display: grid;
 }
 
@@ -213,7 +216,7 @@ div.pagecontent {
   padding: 20px;
 }
 
-footer {
+app-footer {
   grid-area: f;
   background-color: rgb(70, 29, 4);
 }

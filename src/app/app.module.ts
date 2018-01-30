@@ -18,6 +18,8 @@ import { EssentialOilsComponent } from './essential-oils/essential-oils.componen
 import { VitaminsComponent } from './vitamins/vitamins.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
+import { FooterComponent } from './footer/footer.component';
+import { HeaderComponent } from './header/header.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -52,7 +54,9 @@ const routes: Routes = [
     EssentialOilsComponent,
     VitaminsComponent,
     ContactUsComponent,
-    NavBarComponent
+    NavBarComponent,
+    FooterComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
