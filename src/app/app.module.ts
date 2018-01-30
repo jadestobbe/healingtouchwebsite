@@ -17,6 +17,7 @@ import { SkinCareProductsComponent } from './skin-care-products/skin-care-produc
 import { EssentialOilsComponent } from './essential-oils/essential-oils.component';
 import { VitaminsComponent } from './vitamins/vitamins.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
+import { NavBarComponent } from './nav-bar/nav-bar.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -50,7 +51,8 @@ const routes: Routes = [
     SkinCareProductsComponent,
     EssentialOilsComponent,
     VitaminsComponent,
-    ContactUsComponent
+    ContactUsComponent,
+    NavBarComponent
   ],
   imports: [
     BrowserModule,
