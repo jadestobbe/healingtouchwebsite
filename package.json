@@ -1,7 +1,8 @@
 {
   "name": "healingtouch",
-  "version": "1.0.3",
+  "version": "2.3.0",
   "license": "MIT",
+  "main": "server.js",
   "scripts": {
     "ng": "ng",
     "start": "node server.js",
@@ -12,6 +13,10 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "postinstall": "ng build --prod"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jadestobbe/healingtouchwebsite.git"
   },
   "private": true,
   "dependencies": {

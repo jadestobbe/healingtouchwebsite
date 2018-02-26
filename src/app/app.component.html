@@ -1,33 +1,8 @@
 <div class="pagewrapper" style="text-align:center">
-  <header>
-    <img id="menubtn" src="assets/images/menu1.png" title="Menu" alt="menu button">
-    <h1>
-    The Healing Touch!
-    </h1>
-    <a id="facebookwrapper" href="https://www.facebook.com/healingtouchmaryville/"><img id="facebookbtn" src="assets/images/facebookbtn.png" alt="facebook button" title="Connect with us on Facebook"></a>
-
-  </header>
-
-  <nav>
-    <a routerLink="/">Home</a>
-    <a routerLink="/day-spa-services">Day Spa Services</a>
-    <a routerLink="/skin-care-services">Skin Care Services</a>
-    <a routerLink="/hair-services">Hair Services</a>
-    <a routerLink="/packages">Packages</a>
-    <a routerLink="/manicures-pedicures">Manicures/Peducures</a>
-    <a routerLink="/natural-products-store">Natural Producs/Store</a>
-    <a routerLink="/peacock-cosmetics">Peacock Cosmetics</a>
-    <a routerLink="/spray-tanning">Spray Tanning</a>
-    <a routerLink="/skin-care-products">Skin Care Products</a>
-    <a routerLink="/essential-oils">Essential Oils</a>
-    <a routerLink="/vitamins">Vitamins</a>
-    <a routerLink="/contact-us">Contact Us</a>
-  </nav>
+  <app-header></app-header>
+  <app-nav-bar></app-nav-bar>
   <div class="pagecontent">
     <router-outlet></router-outlet>
   </div>
-  <footer>
-    <div class="footer">
-      <p style="text-align:center;">&copy; 2017 TheHealingTouch</p>
-    </div>
-  </footer>
+  <app-footer></app-footer>
+</div>
